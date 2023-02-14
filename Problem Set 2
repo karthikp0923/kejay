@@ -1,2 +1,0 @@
-##Problem Set 2 
-I have the original cat sprite counting up from 0. I also have the football player running from one side to another while playing a _boop_ every 1.5 seconds. I tried to have the _boop_ everytime the football player reach the edge, but wasn't able to do so. You can use the __Flag__ icon to start the animation.
