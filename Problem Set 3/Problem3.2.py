@@ -1,0 +1,5 @@
+print ("Input the value of a and b here:")
+a = input("a")
+b = input("b")
+print(f"Before Swapping a = ", a, " b = ", b)
+print(f"After Swapping a = ", b, " b = ", a)
