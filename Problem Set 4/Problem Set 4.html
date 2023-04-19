@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Simple Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Homepage</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>Hi, my name is Karthik.</p>
+        <p>I love creating websites for class.</p>
+      </section>
+      <section>
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+        </ul>
+      </section>
+      <section>
+        <h2>My Favorite Quote</h2>
+        <button onclick="displayQuote()">Show Quote</button>
+        <p id="quote"></p>
+      </section>
+      <section>
+        <h2>Countdown Timer</h2>
+        <label for="countdown-input">Countdown:</label>
+        <input type="number" id="countdown-input" min="1">
+        <button onclick="startCountdown()">Start</button>
+        <p id="countdown-display"></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Simple Homepage</p>
+    </footer>
+    <script>
+      function displayQuote() {
+        document.querySelector("#quote").innerHTML = "Be the change you wish to see in the world.";
+      }
+
+      function startCountdown() {
+        const countdownInput = document.querySelector("#countdown-input");
+        const countdownDisplay = document.querySelector("#countdown-display");
+        let count = parseInt(countdownInput.value);
+        countdownDisplay.innerHTML = count;
+        const countdownInterval = setInterval(() => {
+          count--;
+          countdownDisplay.innerHTML = count;
+          if (count === 0) {
+            clearInterval(countdownInterval);
+            alert("Surprise!");
+          }
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
