@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KeJay | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div
+      class="scroll-down-message"> <a>Scroll Down</a>
+      <span>&#8595;</span>
+      <div class="scroll-down">
+        <span>Scroll down</span>
+        <i class="fa fa-arrow-down"></i>
+      </div>
+      
+      <script>
+        window.addEventListener('scroll', function() {
+          const scrollDown = document.querySelector('.scroll-down');
+          const scrollPosition = window.pageYOffset;
+          scrollDown.style.opacity = 1 - (scrollPosition / 500);
+        });
+      </script>
+    </div>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <img src="kejay logo.png" width="200" height="100">
+            <script>
+              window.addEventListener('scroll', function() {
+                const header = document.querySelector('.container');
+                const scrollPosition = window.pageYOffset;
+                header.style.opacity = 1 - (scrollPosition / 900);
+              });
+            </script>
+          </div>      
+        </div>
+    </header>
+    <div class="hero-section">
+      <div class="container">
+        <h1>KéJay</h1>
+        <p>DJ and Music Producer</p>
+        <p>KéJay’s music is all about inspiring and uplifting our listeners. His music has the power to bring people together, and is dedicated to creating songs that connect with fans on a deeper, emotional level. His unique sound blends Future Bass with the sound of Big Room, which are both subgenres of EDM, creating a sound that is both fresh and familiar. What sets him apart from other musicians is the focus on authentic storytelling, which allows his music to connect with listeners in a meaningful way. He aims to create an experience for our listeners that goes beyond just listening to a song – creating a feeling that stays with them long after the music has stopped. </p>
+      </div>
+    </div>
+    <div class="featured-section">
+      <div class="container">
+        <h2>Featured Track</h2>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://soundcloud.com/kkejay/escape-kejay"></iframe>
+        <a href="https://soundcloud.com/kkejay" class="btn">Listen to More Music</a>
+      </div>
+    </div>
+    <div class="tour-section">
+      <div class="container">
+        <h2>Upcoming Tour Dates</h2>
+        <ul>
+          <li>June 15, 2023 - Amsterdam, Netherlands</li>
+          <li>June 17, 2023 - London, UK</li>
+          <li>June 20, 2023 - Paris, France</li>
+          <li>June 22, 2023 - Berlin, Germany</li>
+          <li>June 25, 2023 - New York, USA</li>
+          <li>June 28, 2023 - Los Angeles, USA</li>
+        </ul>
+        <a href="https://my-store-9300058.creator-spring.com/" class="btn">See All of KéJay's Merch!</a>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 KéJay. All rights reserved.</p>
+        <nav>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
