@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KeJay | Home</title>
+    <!-- Required Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <!-- Sets Background Image and places the scroll down message at the bottom-->
+  <body>
+    <div class="background-image"></div>
+    <div
+      class="scroll-down-message"> 
+      <div class="scroll-down">        
+        <span>Scroll down</span>
+        <i class="fa fa-arrow-down"></i>
+      </div>
+
+    </div>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <img src="kejay logo.png" width="200" height="100">
+        </div>
+        <!-- Centering the image at the top-->
+      <style>   
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+          </div>
+    </header>
+    <!-- Brand Statement and/or Bio-->
+    <footer>
+    <div class="brand-statement" style="text-align: center; background-image: url('brandstatementbackground.jpeg'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+      <div class="container" style="font-family: Arial, sans-serif;">
+        <h1>DJ and Music Producer</h1>
+        <div class="brand-statement1" style="text-align: center; font-family: Arial, sans-serif; margin-top: 10px; font-size: 42px">
+          <p style="font-family: brush script mt, cursive;">KéJay’s music is all about inspiring and uplifting his listeners. His unique sound blends Future Bass with the sound of Big Room, which are both subgenres of EDM, creating a sound that is both fresh and familiar.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Parallax Scrolling for the Brand Statement-->
+      <script>
+        window.addEventListener('scroll', function() {
+          const scrolled = window.scrollY;
+          const parallax = document.querySelector('.brand-statement');
+          parallax.style.transform = `translate3d(0, ${scrolled * -0.3}px, 0)`;
+        });
+      </script>
+      <!-- Picture takes you to instagram page-->
+      <div style="text-align: center;">
+        <a href="https://www.instagram.com/k.kejay/">
+          <img src="pfp.jpeg" alt="YourImage" style="width: 50%;">
+        </a>
+      </div>
+      
+      <!-- All Spotify Previews-->
+        <div class="featured-section" style= "background-image: url('music.jpeg'); background-size: cover; background-position: center">
+          <div class="container" style="color: white; text-align: center;">
+            <h1 style="font-size: 48px; font-weight: bold; margin-bottom: 20px;">Music:</h1>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2ntCFNZGlVT2wiQq5nnxXY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5xtvOeVmzIt128MSPtJAFD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7j2KYEIwWA9deE6usQ3zdW?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1SpOpzh9dypGMZN57UjTiq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <a href="https://open.spotify.com/artist/2jKCXf3vGcQwQesvN6obal?si=8-H5Ab5nTSmmVjx2uVr69g" class="btn" style="font-size: 24px; font-weight: bold; margin-top: 20px;">Listen to More Music</a>
+          </div>
+        </div>
+      <!-- Merchandise Section, Each link takes you to the store-->
+        <div class="tour-section">
+          <div class="container">
+            <h1>Merch</h1>
+            <div class="container">
+              <div class="product">
+                <img src="Product 1.png" alt="Product 1">
+                <div class="product-info">
+                  <div class="product-title">WE THE ONES HOODIE (Light)</div>
+                  <div class="product-description">Classic Pullover Hoodie.</div>
+                  <div class="product-price">$34.99</div>
+                  <a href="https://my-store-9300058.creator-spring.com/listing/we-the-ones-hoodie-light?product=212" class="buy-now-button">Buy Now</a>
+                </div>
+              </div>
+              <div class="product">
+                <img src="Product 2.png" alt="Product 2">
+                <div class="product-info">
+                  <div class="product-title">WE THE ONES LONG SLEEVE</div>
+                  <div class="product-description">Classic Crewneck Sweatshirt</div>
+                  <div class="product-price">$29.99</div>
+                  <a href="https://my-store-9300058.creator-spring.com/listing/we-the-ones-long-sleeve-tee?product=345" class="buy-now-button">Buy Now</a>
+                </div>
+              </div>
+              <div class="product">
+                <img src="Product 3.png" alt="Product 3">
+                <div class="product-info">
+                  <div class="product-title">WE THE ONES TEE (Light)</div>
+                  <div class="product-description">Classic Tee</div>
+                  <div class="product-price">$14.99</div>
+                  <a href="https://my-store-9300058.creator-spring.com/listing/we-the-ones-tee-light?product=2" class="buy-now-button">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+</div> 
+  </body>
+</html>

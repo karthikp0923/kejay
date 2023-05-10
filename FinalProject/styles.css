@@ -3,8 +3,14 @@
   padding: 0;
   font-family: sans-serif;
 }
+/* Sets Background Color */
+body {
+  background-color: #222222;
+  color: #ffffff;
+}
 
 
+/* Makes Header dissapear as you scroll */
 .header-parallax {
   position: relative;
   top: 0;
@@ -16,11 +22,35 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(255, 255, 255, 1); /* Add this line */
+  background-color: rgba(255, 255, 255, 1); 
 }
 
+/* Aligns the logo to the center */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Adjust the spacing for the logo */
+.logo img {
+  margin-right: 10px;
+}
+
+.featured-section .container {
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Sets the background for the homepage */
 .background-image {
-  background-image: url('kejaypiano.jpg');
+  background-image: url('kejaypiano.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,25 +62,26 @@
   z-index: -2;
 }
 
-.hero-section {
-  background-image: url('keaypiano.jpg');
-  z-index: -1;
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Sets the font and background for Brand Statement Section */
+.brand-statement {
+  background-image: url('brandstaementbackground.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center;   
   font-family: Great Vibes, sans-serif;
-}
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
-.featured-section {
-  background-image: url('featured-image.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-section {
-  background-image: url('tour-image.jpg');
-  background-size: cover;
-  background-position: center;
-}
+  }
+  
+  .brand-statement1 h1,
+  .brand-statement1 p {
+    font-family: 'times new roman', cursive;
+  }
 
 .container {
   position: relative;
@@ -61,6 +92,7 @@
   background-position: center;
 }
 
+/* Properties of the logo at the top */
 .logo {
   display: flex;
   justify-content: space-between;
@@ -73,7 +105,7 @@
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
+/* Properties of the scroll down message at the homepage */
 .scroll-down-message {
   position: absolute;
   bottom: 20px;
@@ -86,3 +118,75 @@
 .scroll-down-message span::after {
   content: "\2193";
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Properties of all the merchandise listed */
+.product {
+  display: flex;
+  margin-bottom: 50px;
+}
+.product img {
+  max-width: 300px;
+  margin-right: 50px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product-description {
+  margin-bottom: 10px;
+}
+.product-price {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.buy-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buy-button:hover {
+  background-color: #0069d9;
+}
+/* Properties of the Spotify button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.artist-section {
+  background-color: #333;
+  color: #fff;
+}
+
